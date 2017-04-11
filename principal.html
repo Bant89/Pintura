@@ -1,0 +1,165 @@
+<!DOCTYPE HTML>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+
+<style type="text/css">
+
+aside{
+	float:right;
+	width: 150px;
+	top:0;
+	bottom:0;
+	position:absolute;
+	background-color: #AAF;
+}
+
+#cAzul{
+
+	width: 35px;
+	height: 35px;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;
+	background-color:#00F;
+	margin-left:60px;
+}
+
+#cVerde{
+
+	width: 35px;
+	height: 35px;
+	-webkit-border-radius:25px;
+	-moz-border-radius:25px;
+	margin-left:60px;
+	background-color:#0F0;
+}
+
+#cAmarillo{
+
+	width:35px;
+	height: 35px;
+	-webkit-border-radius:25px;
+	-moz-border-radius:25px;
+	-o-border-radius:25px;
+	-ms-border-radius:25px;
+	border-radius: 25px;
+	background-color:#fbff2b;
+	margin-left:60px;
+
+}
+
+#cNaranja{
+
+	width: 35px;
+	height: 35px;
+	margin-left:60px;
+	background-color: #ff8002;
+	-webkit-border-radius:25px;
+	-moz-border-radius:25px;
+	-o-border-radius:25px;
+	-ms-border-radius:25px;
+
+}
+
+#cRojo{
+
+	width: 35px;
+	height: 35px;
+	border-radius: 25px;
+	-webkit-border-radius:25px;
+	-moz-border-radius:25px;
+	-ms-border-radius:25px;
+	-o-border-radius:25px;
+	margin-left:60px;
+	background-color: #F00;
+
+}
+
+#cNegro{
+
+	width:35px;
+	height: 35px;
+	-webkit-border-radius:25px;
+	-moz-border-radius:25px;
+	-ms-border-radius:25px;
+	-o-border-radius:25px;
+	background-color:#000;
+	margin-left:60px;
+
+}
+
+aside>h3{
+
+	margin-left: 15px;
+	font-family: Cambria, Consolas, Helvetica, sans-serif;
+	font-size: 1.2em;
+	color:#FFF;
+
+}
+
+.cFondo{
+	background-color: #FFF;
+	height: 35px;
+	padding:10px 0;
+}
+
+.cActivo{
+	background-color:#FAF;
+	border-bottom: 2px solid #222;
+	height: 35px;
+	padding: 10px 0;
+}
+
+canvas{
+
+	float:right;
+
+}
+
+#contador{
+
+	text-align: center;
+	margin-left: 10px;
+	color: #5f5fd6;
+	font-size: 1.5em;
+}
+
+</style>
+</head>
+<body>
+
+<section>
+<canvas width="1180px" height="650px" id="dibujo"></canvas>
+</section>
+<aside>
+<h3>Colores a seleccionar</h3>
+<div class="cFondo">
+<div id="cAzul"></div>
+</div>
+<div class="cFondo">
+<div id="cVerde"></div>
+</div>
+<div class="cFondo">
+<div id="cAmarillo"></div>
+</div>
+<div class="cFondo">
+<div id="cNaranja"></div>
+</div>
+<div class="cFondo">
+<div id="cRojo"></div>
+</div>
+<div class="cFondo">
+<div id="cNegro"></div>
+</div>
+<div id="sTrazo">
+<h3>Tamaño del trazo</h3>
+
+<input type="range" max="50" min="0" step="5" value="10" id="tamano"/>
+<input type="textbox" value="10" size="5" id="contador"/>
+
+</div>
+</aside>
+<script type="text/javascript" src="codigo.js"></script>
+</body>
+</html>
